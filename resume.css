@@ -1,0 +1,158 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Updated background color */
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align content on desktop view */
+}
+
+.sidebar, .content {
+    flex-basis: 100%;
+    padding: 20px;
+}
+
+.sidebar {
+    /* Sidebar styles */
+    background-color: beige;
+    max-width: 30%;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow border to the sidebar */
+}
+
+.content {
+    /* Content section styles */
+    background-color: darkgrey;
+    max-width: 75%; /* Widened the content area */
+    color: white;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow border to the content area */
+}
+
+.sidebar img {
+    /* Profile image styles */
+    width: 150px; /* Set a fixed width for the image to make it square */
+    height: 150px; /* Set a fixed height for the image to make it square */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow border to the image */
+}
+
+.sidebar h1 {
+    /* Heading styles */
+    font-family: 'Montserrat', sans-serif; /* Different font for the title */
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.sidebar p {
+    /* Paragraph styles */
+    font-family: 'Roboto', sans-serif; /* Different font for the description */
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.content h1 {
+    /* Heading styles */
+    font-family: 'Montserrat', sans-serif; /* Different font for the title */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    /* Paragraph styles */
+    font-family: 'Roboto', sans-serif; /* Different font for the description */
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.table-container {
+    /* Table container styles */
+    margin-top: 20px;
+}
+
+table {
+    /* Table styles */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    /* Table cell styles */
+    padding: 8px;
+    border-bottom: 1px solid white;
+}
+
+th {
+    /* Table header styles */
+    background-color: darkgrey;
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    /* Link styles */
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    /* Hover effect for links */
+    text-decoration: underline;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow border to the form */
+    padding: 20px; /* Add some padding to the form */
+    border-radius: 5px; /* Add border radius to the form */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: darkgrey;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666666;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333333;
+}
+
+.dark-mode .sidebar {
+    background-color: #333333;
+}
+
+.dark-mode .content {
+    background-color: #1a1a1a;
+}
+
+.dark-mode button {
+    background-color: #1a1a1a;
+    color: white;
+}
